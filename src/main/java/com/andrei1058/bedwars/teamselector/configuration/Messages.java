@@ -19,7 +19,6 @@ public class Messages {
     public static final String TEAM_JOIN = PATH + "team-join";
     public static final String TEAM_FULL = PATH + "team-full";
     public static final String TEAM_NOT_BALANCED = PATH + "teams-not-balanced";
-    public static final String PARTY_DENIED = PATH + "party-deny";
     public static final String CANT_JOIN_WHILE_STARTING = PATH + "cant-join-while-starting";
     public static final String ALREADY_IN_TEAM = PATH + "already-in-team";
 
@@ -31,13 +30,12 @@ public class Messages {
             addDefault(l, GUI_NAME, "&7Team Selector", "&8Alege o Echipa");
             addDefault(l, SELECTOR_NAME, "&aTeam Selector &7(Right Click)", "&9Alege o Echipa");
             addDefault(l, SELECTOR_LORE, Collections.singletonList("&7Choose your team"), Collections.singletonList("&7Deschide cu click-dreapta!"));
-            addDefault(l, CHOICE_LORE, Arrays.asList("&7Click to join the", "{color}{team} Team&7.", "", "&7Current players:", "&7&o{members}", "", "&eClick to join!"), Arrays.asList("", "&7&o{members}", "", "&eIntra cu Click!"));
-            addDefault(l, CHOICE_NAME, "{color}{team} TEAM &f({selected}&7/&f{total})", "{color}{team} &f({selected}&7/&f{total})");
-            addDefault(l, SWITCH_DISABLED, "{prefix}&cYou cannot change your team!", "{prefix}&cPoti alege echipa o singura data!");
-            addDefault(l, TEAM_JOIN, "{prefix}&eYou joined the {color}{team} &eteam!", "{prefix}&eTe-ai alaturat echipei {color}{team}&e!");
-            addDefault(l, TEAM_FULL, "{prefix}{color}{team} &c Team is full!", "{prefix}&cEchipa {color}{team} &c este plina!");
+            addDefault(l, CHOICE_LORE, Arrays.asList("&7Click to join the", "{color}{team} Team&7.", "", "&7Current players:", "&f{members}", "", "&eClick to join!"), Arrays.asList("", "&7&o{members}", "", "&eIntra cu Click!"));
+            addDefault(l, CHOICE_NAME, "{color}{team} Team", "{color}{team} Team");
+            addDefault(l, SWITCH_DISABLED, "", "");
+            addDefault(l, TEAM_JOIN, "", "");
+            addDefault(l, TEAM_FULL, "{prefix}&cFull!", "{prefix}&cEchipa {color}{team} &c este plina!");
             addDefault(l, TEAM_NOT_BALANCED, "{prefix}&cTeams are not balanced! Try joining another team!", "{prefix}&cEchipele nu sunt echilibrate! Incearca alta!");
-            addDefault(l, PARTY_DENIED, "{prefix}&cYou can't choose your team because you're in a party!", "{prefix}&cNu poti alege o echipa pentru că te afli intr-un party!");
             addDefault(l, CANT_JOIN_WHILE_STARTING, "{prefix}&cYou cannot join this team at the moment. The game is starting!", "{prefix}&cNu poti intra in aceasta echipa chiar acum. Incepe jocul!");
             addDefault(l, ALREADY_IN_TEAM, "{prefix}&cYou are already in this team!", "{prefix}&cSunteți deja în această echipă");
         }
