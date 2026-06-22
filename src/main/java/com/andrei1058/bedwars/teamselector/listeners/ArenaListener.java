@@ -11,13 +11,6 @@ import com.andrei1058.bedwars.teamselector.teamselector.ArenaPreferences;
 import com.andrei1058.bedwars.teamselector.teamselector.TeamManager;
 import com.andrei1058.bedwars.teamselector.teamselector.TeamSelectorAssigner;
 import com.andrei1058.bedwars.teamselector.teamselector.TeamSelectorGUI;
-
-import me.notlewx.privategames.API;
-
-import me.notlewx.privategames.PrivateGames;
-import me.notlewx.privategames.api.party.IParty;
-import me.notlewx.privategames.api.player.IPlayerSettings;
-import me.notlewx.privategames.api.player.IPrivatePlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -42,10 +35,10 @@ public class ArenaListener implements Listener {
                 @Override
                 public void run() {
                     TeamSelectorGUI.giveItem(e.getPlayer(), null);
-                    Bukkit.getLogger().info("[PrivateTeamSelector] Giving Team Selector to " + e.getPlayer().getName());
+                    Bukkit.getLogger().info("[PrivateGames-TeamSelector] Giving Team Selector to " + e.getPlayer().getName());
                     for (Player allPlayer : a.getPlayers()) {
                         TeamSelectorGUI.giveItem(allPlayer, null);
-                        Bukkit.getLogger().info("[PrivateTeamSelector] Giving Team Selector to " + e.getPlayer().getName());
+                        Bukkit.getLogger().info("[PrivateGames-TeamSelector] Giving Team Selector to " + e.getPlayer().getName());
                     }
                 }
             }.runTaskLater(Main.plugin, 30L);
